@@ -3,7 +3,9 @@ import jax
 from jax import grad, vmap, jit, random, jacrev
 from functools import partial
 from jax.experimental.ode import odeint
-from jax.experimental import optimizers
+#from jax.experimental import optimizers
+#import optax # optax.adam instead of optimizers.adam
+from jax.example_libraries import optimizers
 from jax.scipy.optimize import minimize
 from jax.lax import scan
 from jax.nn import softplus
